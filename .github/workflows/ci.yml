@@ -23,8 +23,9 @@ jobs:
           node-version: "16"
 
       - name: Install dependencies
-        run: npm install
-      
+        run: |
+          npm install
+          npm ci
 
       - name: Check installed packages
         run: npm list
